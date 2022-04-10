@@ -11,8 +11,6 @@ Serial.print(" Data Received:");
 
 void loop()
 { 
-   if (Serial.available() > 1) 
-   { 
   Serial.println("");
   Serial.print(" Data transmitted:");    
     while(Serial.available()>0)
@@ -84,7 +82,7 @@ void loop()
    delay(10);
     }
 
-   }
+   
   int arrayone[] = {0,0,0,0,0,0,0};
   int a;
   int bit = analogRead(pin);
