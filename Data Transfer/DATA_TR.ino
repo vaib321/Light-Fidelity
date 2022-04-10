@@ -11,8 +11,6 @@ void setup() {
 
 void loop()
 {
-   if (Serial.available() > 1) 
-   {
     while(Serial.available()>0)
     {
   int a = 0;
@@ -82,7 +80,7 @@ void loop()
    delay(10);
     }
 //    Serial.println("");
-   }
+   
   int arrayone[] = {0,0,0,0,0,0,0};
   int a;
   int bit = analogRead(pin);
